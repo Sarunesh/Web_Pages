@@ -1,0 +1,163 @@
+body {
+    background-color: #f3eae3;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-sizing: border-box;
+    height: 60%;/* width: 500px; */
+    /* max-height: 80vh;height: 375px; */
+    aspect-ratio: 4/3;
+    border-radius: 3%;
+    /* gap: 20px; */
+    scale: 0.99;
+}
+
+.image-fit {
+    background: url("./image-product-desktop.jpg")center/cover;
+    width: 50%; /* width: 250px; */
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: white;
+    width: 50%; /* width: 250px; */
+    height: 100%; /* height: 375px; */
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    padding: 6% 6% 6% 6%;
+    font-size: medium;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.one {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65em;
+    font-weight: 600;
+    color: hsl(228, 12%, 48%);
+    opacity: 0.8;
+    padding-bottom: 8%;
+    letter-spacing: 0.1em;
+}
+
+.two {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 1.7em;
+    font-weight: 700;
+    line-height: 97%;
+    padding-bottom: 8%;
+}
+
+.three {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+    opacity: 0.7;
+    line-height: 180%;
+    padding-bottom: 8%;
+}
+
+.rate {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    padding-bottom: 8%;
+    align-items: center;
+}
+
+.four {
+    font-family: 'Fraunces', serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #318e67;
+}
+
+.five {
+    font-family: 'Fraunces', serif;
+    font-size: 0.65em;
+    font-weight: 700;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #338464;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 70%;
+    color: white;
+    width: 100%;
+    height: 3.5em;
+    border-radius: 7px;
+    gap: 2em;
+}
+
+svg {
+    padding-right: 0.5em;
+}
+
+button:hover {
+    background-color: #266149;
+}
+
+.icon {
+    fill: white;
+    scale: 1.2;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        width: 100%;
+        height: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+        /* display: block; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 7% 4% 7% 4%;
+    }
+    .image-fit {
+        background: url("./image-product-mobile.jpg")center/cover;
+        height: 45%;
+        width: 100%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 0%;
+    }
+    .content {
+        width: 100%;
+        height: 55%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 5%;
+    }
+    .three {
+        font-size: 0.69em;
+    }
+}
