@@ -1,0 +1,75 @@
+body {
+    background-color: #d5e1ef;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.8em 0.8em 0.9em 0.8em;
+    border-radius: 4%;
+    height: 60%;
+    aspect-ratio: 2.7/4.4;
+}
+
+.image-fit {
+    background: url("./Images/image-qr-code.png")center/cover;
+    border-radius: 4%;
+    height: 62%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: max-content;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    padding: 0.5em 0.3em 0.3em 0.3em;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: scroll;
+    gap: 0.8em;
+    padding-top: 8%;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.one {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    height: max-content;
+}
+
+.two {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.83em;
+    font-weight: 400;
+    color: rgb(138, 151, 173);
+    height: max-content;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        height: 60%;
+        aspect-ratio: 1.9/3.2;
+    }
+    .content {
+        gap: 0.8em;
+        text-align: center;
+    }
+}
